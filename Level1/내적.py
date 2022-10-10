@@ -1,4 +1,8 @@
 import numpy as np
 
 def solution(a, b):
-    return int((np.array(a) * np.array(b)).sum())
+    # Usig Numpy
+    # return int((np.array(a) * np.array(b)).sum())
+    
+    # Not using Numpy
+    return sum([x*y for x,y in zip(a,b)])
